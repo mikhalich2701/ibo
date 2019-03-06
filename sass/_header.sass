@@ -1,0 +1,91 @@
+/*============================ HEADER ===========================*/
+.header
+	padding-top: 70px 
+	background: #000
+	color: #fff
+	&__menu
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-bottom: 20px
+	&__logo
+		&-text
+			margin-left: 6px
+			margin-top: 4px
+			color: #ffffff;
+			font-size: 0.65rem
+			font-weight: 700
+			letter-spacing: 1.9px
+			text-transform: uppercase
+		&:hover &-text
+			color: #fff
+	&__nav
+		display: flex
+		align-items: center
+		&-burger
+			display: none
+		&-box
+			display: flex
+		&-item
+			margin: 0 30px
+		+r(992)
+			&-item
+				margin: 0 5px
+		+r(768)
+			display: none
+		&-link
+			color: #fff
+			font-size: 1rem
+			font-weight: 700
+			letter-spacing: 0.2px
+	.button
+		width: 195px
+		background: linear-gradient(100deg, rgba(252, 155, 52, 1) 0%, rgba(236, 134, 26, 1) 100%)
+		p
+			margin-top: 3px
+			margin-left: 5px
+	&__slide
+		position: relative
+		margin-top: 150px
+		&-item
+			display: flex!important
+			align-items: flex-start
+		&-info, &-img
+			width: 50%
+		&-title
+			margin-bottom: 15px
+		&-text
+			margin-bottom: 40px
+			font-size: 1.2rem
+			font-weight: 300
+			letter-spacing: 0.94px
+			line-height: 1.4rem
+			letter-spacing: 0.94px
+			opacity: .6
+		&-detaile
+			display: flex
+			align-items: center
+			max-width: 150px
+			color: #fff
+			font-size: 1.1rem
+			font-weight: 600
+			p
+				margin-right: 10px
+			img
+				transition: transform .3s
+			&:hover
+				color: #fff
+			&:hover img 
+				transform: translateX(10px) 
+		.slick-dots 
+		    bottom: 56px
+		    left: 0
+		    text-align: left
+		    li
+		    	margin: 0 0
+		    	width: 90px
+		    	height: 2px
+		    	background: #fff
+		    	opacity: 0.25
+		    .slick-active
+		    	opacity: 0.99
