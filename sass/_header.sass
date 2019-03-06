@@ -44,14 +44,38 @@
 		p
 			margin-top: 3px
 			margin-left: 5px
+	&__row
+		position: relative
+		&-current
+			position: absolute
+			display: flex
+			align-items: flex-start
+			top: 320px
+			left: 375px
+			font-size: 1.2rem
+			&-slidenumber
+				font-size: 0.9rem
+				opacity: 0.6
+			img
+				margin: 0 10px
+			&-number
+				margin-top: 5px
 	&__slide
 		position: relative
 		margin-top: 150px
+		width: 100%
 		&-item
 			display: flex!important
 			align-items: flex-start
+			+r(768)
+				flex-wrap: wrap
 		&-info, &-img
 			width: 50%
+			+r(768)
+				width: 100%
+		&-info
+			+r(768)
+				margin-bottom: 40px
 		&-title
 			margin-bottom: 15px
 		&-text
@@ -78,14 +102,18 @@
 			&:hover img 
 				transform: translateX(10px) 
 		.slick-dots 
-		    bottom: 56px
+		    top: 330px
 		    left: 0
 		    text-align: left
+		    +r(768)
+		    	top: 600px
 		    li
 		    	margin: 0 0
 		    	width: 90px
 		    	height: 2px
 		    	background: #fff
 		    	opacity: 0.25
+		    	+r(768)
+		    		width: 70px
 		    .slick-active
 		    	opacity: 0.99
