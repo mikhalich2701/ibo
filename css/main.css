@@ -140,7 +140,6 @@ h6,
   font-size: 1rem;
   color: #1c1c1c;
   font-weight: 800;
-  font-family: "sf_ui_display", sans-serif;
 }
 
 a:hover {
@@ -573,11 +572,18 @@ a:focus {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  height: 200px;
 }
 
 .project__item-number {
-  min-width: 52px !important;
-  min-height: 52px !important;
+  margin-right: 20px;
+  padding-top: 5px;
+  min-width: 52px;
+  min-height: 52px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -592,9 +598,21 @@ a:focus {
   align-items: center;
   color: #fff;
   font-size: 1.8rem;
+  font-weight: bold;
   -webkit-border-radius: 50%;
   border-radius: 50%;
   background: #292929;
+}
+
+.project__item-title {
+  margin-bottom: 8px;
+}
+
+.project__item-text {
+  line-height: 1rem;
+  font-size: 0.85rem;
+  mix-blend-mode: normal;
+  opacity: 0.35;
 }
 
 .project .button {
@@ -681,6 +699,10 @@ a:focus {
   .h1 {
     font-size: 2.4rem;
     line-height: 3rem;
+  }
+
+  .project__item {
+    height: 150px;
   }
 }
 

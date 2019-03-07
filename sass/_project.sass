@@ -9,17 +9,30 @@
 			font-weight: 400
 	&__item
 		display: flex
-		//align-items: flex-start
+		align-items: flex-start
+		height: 200px
+		+r(1200)
+			height: 150px
 		&-number
-			min-width: 52px!important
-			min-height: 52px!important
+			margin-right: 20px
+			padding-top: 5px
+			min-width: 52px
+			min-height: 52px
 			display: flex
 			justify-content: center
-			align-items: center
+			align-items: center 
 			color: #fff
 			font-size: 1.8rem
+			font-weight: bold
 			border-radius: 50%
 			background: $maindark
+		&-title
+			margin-bottom: 8px
+		&-text
+			line-height: 1rem
+			font-size: 0.85rem
+			mix-blend-mode: normal
+			opacity: 0.35
 	.button
 		margin-top: 90px
 		width: 300px
