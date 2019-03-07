@@ -1,0 +1,47 @@
+/*========================= DIRECTOR ========================*/
+.director
+	padding-top: 105px
+	&__info
+		+r(992)
+			margin-bottom: 30px
+		&-title
+			margin-bottom: 32px
+			+r(576)
+				margin-bottom: 20px
+				font-size: $h4 * 0.8
+		&-subtitle
+			margin-bottom: 10px
+			+r(576)
+				font-size: $h5 * 0.8
+		&-text
+			margin-bottom: 35px
+			line-height: 16px
+			mix-blend-mode: normal
+			opacity: 0.53
+		&-social
+			display: flex
+			align-items: center
+			&-item
+				display: flex
+				justify-content: center
+				align-items: center
+				margin-right: 5px
+				width: 40px
+				height: 40px
+				border-radius: 50%
+				background: $maindark
+				transition: opacity .3s
+				&:hover
+					opacity: 0.8
+	&__img
+		box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.197464)
+		&-link
+			display: block
+			position: absolute
+			left: 50%
+			top: 50% 
+			transform: translate(-50%, -50%)
+			transition: opacity .3s
+			&:hover
+				opacity: 0.8
+			

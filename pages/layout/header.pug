@@ -3,7 +3,7 @@ header.header
 		.row
 			.col
 				.header__menu
-					a.header__logo(href="main.html")
+					a.header__logo(href="#")
 						img(src="img/logo.svg", alt="Логотип")
 						p.header__logo-text Делаем как надо.
 					nav.header__nav
@@ -13,13 +13,13 @@ header.header
 							span
 						ul.header__nav-box
 							li.header__nav-item
-								a.header__nav-link(href="#about") Главная
+								a.header__nav-link(href="#") Главная
 							li.header__nav-item
-								a.header__nav-link(href="#advantage") Наш Instagram
+								a.header__nav-link(href="#") Наш Instagram
 							li.header__nav-item
-								a.header__nav-link(href="#income") Проекты
+								a.header__nav-link(href="#") Проекты
 							li.header__nav-item
-								a.header__nav-link(href="#income") Отзывы
+								a.header__nav-link(href="#") Отзывы
 					button.button
 						img(src="img/icon-phone.svg", alt="Трубка")
 						p ОБРАТНЫЙ ЗВОНОК
@@ -27,6 +27,11 @@ header.header
 		.row
 			.col
 				.header__row
+					.header__slidecontrol
+						.header__arrow.header__arrow-left
+							img(src="img/arrow-left.svg", alt="Стрелка")
+						.header__arrow.header__arrow-right
+							img(src="img/arrow-right.svg", alt="Стрелка")
 					.header__row-current
 							p.header__row-current-slidenumber 01
 							img(src="img/slash.svg", alt="Слэш")
@@ -49,7 +54,7 @@ header.header
 									p Подробнее
 									img(src="img/icons-right.svg", alt="Стрелка")
 							.header__slide-img
-								img.img-responsive(src="img/house2.png", alt="Дом")
+								img.img-responsive(src="img/house1.png", alt="Дом")
 						.header__slide-item
 							.header__slide-info
 								h1.header__slide-title Создаем дома в Москве и области.
@@ -58,7 +63,7 @@ header.header
 									p Подробнее
 									img(src="img/icons-right.svg", alt="Стрелка")
 							.header__slide-img
-								img.img-responsive(src="img/house3.png", alt="Дом")
+								img.img-responsive(src="img/house1.png", alt="Дом")
 						.header__slide-item
 							.header__slide-info
 								h1.header__slide-title Создаем дома в Москве и области.
@@ -67,4 +72,4 @@ header.header
 									p Подробнее
 									img(src="img/icons-right.svg", alt="Стрелка")
 							.header__slide-img
-								img.img-responsive(src="img/house4.png", alt="Дом")
+								img.img-responsive(src="img/house1.png", alt="Дом")
