@@ -1,0 +1,34 @@
+section.application
+	.container
+		.row.align-items-center
+			.col-4
+				h2.application__title Получите<br>представление<br>о строительстве.
+				p.application__subtitle ВЫ ПОЛУЧИТЕ:
+				ul.application__list
+					li.application__list-item
+						.application__list-check
+							img(src="img/check.svg", alt="Check")
+						p Предварительный вариант сметы
+					li.application__list-item
+						.application__list-check
+							img(src="img/check.svg", alt="Check")
+						p Советы по выбору материалов
+					li.application__list-item
+						.application__list-check
+							img(src="img/check.svg", alt="Check")
+						p Перечень проверенных поставщиков
+					li.application__list-item
+						.application__list-check
+							img(src="img/check.svg", alt="Check")
+						p Примерный срок работ
+			.col-4.offset-3
+				form.application__form
+					p.application__form-title ОСТАВЬТЕ ЗАЯВКУ
+					p.application__form-subtitle и мы вам перезвоним!
+					input.application__form-item.person(type="text", name="name", placeholder="Введите ваше имя")
+					input.application__form-item.phone(type="tel", name="tel", placeholder="Введите ваш телефон")
+					button.button.application__form-button(type="submit") ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
+					label.application__form-check
+						input(type='checkbox')
+						|  Согласен с политикой конфиденциальности
+

@@ -7,12 +7,16 @@
 		span
 			font-family: $default-font
 			font-weight: 400
+		+r(576)
+			font-size: $h4 * 0.8
 	&__item
 		display: flex
 		align-items: flex-start
 		height: 200px
 		+r(1200)
 			height: 150px
+		+r(768)
+			height: 120px
 		&-number
 			margin-right: 20px
 			padding-top: 5px
@@ -36,3 +40,5 @@
 	.button
 		margin-top: 90px
 		width: 300px
+		+r(768)
+			margin-top: 30px

@@ -112,8 +112,7 @@ h1,
 
 h2,
 .h2 {
-  font-family: "sf_ui_display", sans-serif;
-  font-size: 2.9rem;
+  font-size: 2.5rem;
 }
 
 h3,
@@ -196,6 +195,7 @@ a:focus {
   -ms-flex-align: center;
   align-items: center;
   padding: 0;
+  padding-top: 5px;
   height: 35px;
   color: #fff;
   font-size: 0.8rem;
@@ -620,6 +620,150 @@ a:focus {
   width: 300px;
 }
 
+/*============================ APPLICATION ===========================*/
+
+.application {
+  position: relative;
+  padding: 80px 0;
+  background: url("../img/beautiful_house_bg.png") center center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.application__title {
+  margin-bottom: 40px;
+  line-height: 42px;
+  letter-spacing: -0.03px;
+}
+
+.application__subtitle {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  letter-spacing: 1.19px;
+}
+
+.application__list-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.application__list-item p {
+  color: #4B4B4B;
+  font-size: 0.9rem;
+  letter-spacing: -0.01px;
+}
+
+.application__list-check {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 13px;
+  width: 16px;
+  height: 16px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #292929;
+}
+
+.application__form {
+  padding: 45px 30px 30px 30px;
+  width: 100%;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 2px 26px rgba(0, 0, 0, 0.119509);
+  box-shadow: 0px 2px 26px rgba(0, 0, 0, 0.119509);
+  text-align: center;
+}
+
+.application__form-title {
+  margin-bottom: 5px;
+  font-size: 1.7rem;
+  font-weight: bold;
+  letter-spacing: 0.9px;
+}
+
+.application__form-subtitle {
+  margin-bottom: 25px;
+  font-size: 19px;
+  font-weight: 300;
+  color: #565656;
+}
+
+.application__form-item {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 45px;
+  mix-blend-mode: normal;
+  opacity: 0.82;
+  -webkit-border-radius: 24px;
+  border-radius: 24px;
+}
+
+.application__form-item::-webkit-input-placeholder {
+  font-size: 0.8rem;
+  letter-spacing: 0.2px;
+  color: #1c1c1c;
+  mix-blend-mode: normal;
+  opacity: 0.37;
+  text-align: center;
+}
+
+.application__form-item::-ms-input-placeholder {
+  font-size: 0.8rem;
+  letter-spacing: 0.2px;
+  color: #1c1c1c;
+  mix-blend-mode: normal;
+  opacity: 0.37;
+  text-align: center;
+}
+
+.application__form-item::placeholder {
+  font-size: 0.8rem;
+  letter-spacing: 0.2px;
+  color: #1c1c1c;
+  mix-blend-mode: normal;
+  opacity: 0.37;
+  text-align: center;
+}
+
+.application__form .person {
+  background: #F4F4F4 url("../img/user.svg") 24px 50% no-repeat;
+}
+
+.application__form .phone {
+  background: #F4F4F4 url("../img/phone.svg") 24px 50% no-repeat;
+}
+
+.application__form .button {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.application__form-check {
+  font-size: 0.8rem;
+  letter-spacing: 0.2px;
+  color: #1c1c1c;
+  mix-blend-mode: normal;
+  opacity: 0.37;
+}
+
 /*============================ FOOTER ===========================*/
 
 /*============================ ANIMATION ===========================*/
@@ -758,6 +902,14 @@ a:focus {
   .header__slide .slick-dots li {
     width: 70px;
   }
+
+  .project__item {
+    height: 120px;
+  }
+
+  .project .button {
+    margin-top: 30px;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -768,5 +920,9 @@ a:focus {
 
   .director__info-subtitle {
     font-size: 1.28rem;
+  }
+
+  .project__title {
+    font-size: 1.6rem;
   }
 }
