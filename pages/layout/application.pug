@@ -1,7 +1,9 @@
 section.application
+	img.application__img(src="img/paper.png", alt="Лист")
+	img.application__img(src="img/fan.png", alt="Веер")
 	.container
 		.row.align-items-center
-			.col-4
+			.col-lg-4.col-md-6
 				h2.application__title Получите<br>представление<br>о строительстве.
 				p.application__subtitle ВЫ ПОЛУЧИТЕ:
 				ul.application__list
@@ -21,8 +23,9 @@ section.application
 						.application__list-check
 							img(src="img/check.svg", alt="Check")
 						p Примерный срок работ
-			.col-4.offset-3
+			.col-lg-4.offset-lg-3.col-md-6.offset-md-0
 				form.application__form
+					img.application__form-img(src="img/clips.png", alt="Клипса")
 					p.application__form-title ОСТАВЬТЕ ЗАЯВКУ
 					p.application__form-subtitle и мы вам перезвоним!
 					input.application__form-item.person(type="text", name="name", placeholder="Введите ваше имя")

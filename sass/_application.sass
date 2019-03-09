@@ -4,16 +4,30 @@
 	padding: 80px 0
 	background: url('../img/beautiful_house_bg.png') center center no-repeat
 	background-size: cover
+	&__img
+		position: absolute
+		display: block
+		&:first-child
+			left: 40%
+		&:nth-child(2)
+			top: 45%
+			left: 41%
+		+r(768)
+			display: none
 	&__title
 		margin-bottom: 40px
 		line-height: 42px
 		letter-spacing: -0.03px
+		+r(1200)
+			font-size: $h2 * 0.8
 	&__subtitle
 		margin-bottom: 20px
 		font-weight: bold
 		font-size: 1.1rem
 		letter-spacing: 1.19px
 	&__list
+		+r(768)
+			margin-bottom: 60px
 		&-item
 			display: flex
 			align-items: center
@@ -32,16 +46,25 @@
 			border-radius: 50%
 			background: $maindark
 	&__form
+		position: relative
 		padding: 45px 30px 30px 30px
 		width: 100%
 		background: #FFFFFF
 		box-shadow: 0px 2px 26px rgba(0, 0, 0, 0.119509)
 		text-align: center
+		&-img
+			position: absolute
+			display: block
+			top: -54px
+			left: 50%
+			transform: translateX(-50%)
 		&-title
 			margin-bottom: 5px
 			font-size: 1.7rem
 			font-weight: bold
 			letter-spacing: 0.9px
+			+r(1200)
+				font-size: 1.4rem
 		&-subtitle
 			margin-bottom: 25px
 			font-size: 19px
