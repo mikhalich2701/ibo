@@ -4,24 +4,45 @@
 	padding-bottom: 70px
 	&__title
 		margin-bottom: 65px
-	.tab-content
-		.tab-pane
-			display: block
-			height: 0
-			.active
-				height: auto
+	.tab-content > .tab-pane,
+	.pill-content > .pill-pane
+		display: block
+		height: 0
+		margin-bottom: 0
+		overflow: hidden
+
+	.tab-content > .active,
+	.pill-content > .active
+		height: auto
+		overflow: visible
 	.nav
+		width: 100%
 		margin-bottom: 80px
-		&-link
+		border-bottom: none
+		+r(768)
+			flex-wrap: wrap
+			justify-content: center
+		&-item
+			width: 20%
+			+r(768)
+				width: 50%
+				margin-top: 10px
+		&-link			
+			padding: 0 0
+			padding-bottom: 10px
 			color: $maintext
 			font-size: 0.8rem
+			text-align: center
 			opacity: 0.3
 			border-radius: 0
 			transition: opacity .3s
+			border-bottom: 1px solid $maintext
 			&:hover
 				opacity: 1
 				border: none
 				border-bottom: 1px solid $maintext
+			+r(992)
+				font-size: 0.6rem
 		.active
 			opacity: 1
 			color: $maintext
@@ -33,17 +54,46 @@
 		min-height: 100px
 		background: #F9F9F9
 		box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.0797951)
+		+r(992)
+			margin-bottom: 30px
+		&-row
+			position: relative
 	&__slider
 		margin-bottom: 20px
 	&__slider1
+		position: relative
 		margin-bottom: 30px
 		width: 80%
 		+push-auto
+		.slick-slide
+			opacity: 0.6
+			border: 2px solid transparent
+			transition: opacity .3s
+			&:hover
+				opacity: 1
+		.slick-center
+			border: 2px solid #000
+			opacity: 1
+		.slick-arrow
+			width: 7px
+			height: 12px
+			background: url('../img/arrow_sm.svg') center center no-repeat
+			background-size: cover
+			transition: opacity .3s
+			&:hover
+				opacity: 0.6
+		.slick-next
+			transform-origin: center center
+			transform: rotate(180deg) translateY(7px)
 		&-item
 			margin: 0 5px
 	&__info
 		width: 80%
 		+push-auto
+		+r(1200)
+			width: 100%
+		+r(992)
+			width: 80%
 	&__price
 		display: flex
 		justify-content: space-between
@@ -72,4 +122,9 @@
 		color: #2A2A2A
 		font-size: 0.65rem
 		line-height: 0.8rem
+	.button
+		margin-top: 30px
+		box-shadow: 0px 0px 24px rgba(85, 85, 85, 0.24499)
+		width: 185px
+		+push-auto
 

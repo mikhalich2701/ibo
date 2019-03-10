@@ -26,12 +26,12 @@ $(document).ready(function (){
         centerMode: true,
         centerPadding: '0px',
         dots: false,
-        arrows: false,
+        arrows: true,
         asNavFor: this,
         focusOnSelect: true,
         responsive: [
         {
-          breakpoint: 992,
+          breakpoint: 768,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1
@@ -39,6 +39,37 @@ $(document).ready(function (){
         }
      ]
     });
+  });
+
+  $('.client__slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    dots: false,
+    nextArrow: '.client__arrow-right',
+    prevArrow: '.client__arrow-left',
+    responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+     ]
   });
 
 });
