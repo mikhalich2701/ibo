@@ -3,7 +3,7 @@ html(lang='ru')
 	head
 		include layout/head.pug
 		block title
-			title Ido
+			title Project Card
 	body
 		//HEADER
 		include layout/header.pug
@@ -11,29 +11,17 @@ html(lang='ru')
 		//MAIN
 		main.main
 
-			//DIRECTOR
-			include layout/director.pug
+			//CARDITEM
+			include layout/carddata.pug
 
-			//PROJECT
-			include layout/project.pug
+			//CARDDATA
+			include layout/carditem.pug
 
 			//APPLICATION
 			include layout/application.pug
 
-			//PROJECTS
-			include layout/projects.pug
-
-			//CLIENT
-			include layout/client.pug
-
-			//INSTAGRAM
-			include layout/instagram.pug
-
 			//COMMENT
-			block variables
-				- var page = "index";
 			include layout/comment.pug
-
 
 			//MAP
 			include layout/map.pug
@@ -43,7 +31,3 @@ html(lang='ru')
 
 		//SCRIPT
 		include layout/scripts.pug
-
-
-
-	

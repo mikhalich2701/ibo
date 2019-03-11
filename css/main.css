@@ -972,7 +972,7 @@ a:focus {
   line-height: 0.8rem;
 }
 
-.projects .button {
+.projects__button {
   margin-top: 30px;
   -webkit-box-shadow: 0px 0px 24px rgba(85, 85, 85, 0.24499);
   box-shadow: 0px 0px 24px rgba(85, 85, 85, 0.24499);
@@ -1137,9 +1137,6 @@ a:focus {
 .comment {
   padding-top: 65px;
   padding-bottom: 65px;
-  background: url("../img/comment_bg.png") center center no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover;
 }
 
 .comment__title {
@@ -1285,6 +1282,12 @@ a:focus {
   color: #D0D0D0;
 }
 
+.index {
+  background: url("../img/comment_bg.png") center center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
 /*========================= MAP ========================*/
 
 .map {
@@ -1408,11 +1411,55 @@ a:focus {
   }
 }
 
-/*============================ ПРОЕКТЫ ============================*/
+/*===================== ТИПОВЫЕ ПРОЕКТЫ =======================*/
 
-/*========================= ТИПОВЫЕ ПРОЕКТЫ =======================*/
+/*============================ HOMEPROJECT ===========================*/
+
+.homeproject__block {
+  padding: 120px 0;
+}
+
+.homeproject__block-right {
+  background: rgba(216, 216, 216, 0.12);
+}
+
+.homeproject__info-title {
+  margin-bottom: 30px;
+}
+
+.homeproject__info-text {
+  margin-bottom: 40px;
+  font-size: 1rem;
+  line-height: 1.1rem;
+  opacity: 0.6;
+}
+
+.homeproject__info-button {
+  width: 180px;
+}
+
+/*=========================  ПРОЕКТЫ =======================*/
+
+/*============================ PROJECTLIST ===========================*/
+
+.projectlist {
+  padding-top: 110px;
+  padding-bottom: 60px;
+}
+
+.projectlist__title {
+  margin-bottom: 75px;
+}
+
+.projectlist__item {
+  margin-bottom: 30px;
+}
 
 /*======================== КАРТОЧКА ПРОЕКТА ========================*/
+
+/*============================ CARDITEM ===========================*/
+
+/*============================ CARDDATA ===========================*/
 
 /*============================ УСЛУГИ ============================*/
 
@@ -1500,6 +1547,21 @@ a:focus {
 
   .map__link {
     margin-left: 30px;
+  }
+
+  .homeproject__block {
+    padding: 60px 0;
+  }
+
+  .homeproject__info-title {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+
+  .homeproject__info-text {
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+    line-height: 0.9rem;
   }
 }
 
@@ -1590,6 +1652,10 @@ a:focus {
 
   .map__link {
     margin-left: 10px;
+  }
+
+  .homeproject__info-button {
+    margin-bottom: 20px;
   }
 }
 
