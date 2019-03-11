@@ -72,4 +72,60 @@ $(document).ready(function (){
      ]
   });
 
+  $('.comment__slider').slick({    
+    centerMode: true,
+    slidesToShow: 3,
+    centerPadding: '0',
+    dots: false,
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          centerMode: true,
+          slidesToShow: 1,
+          centerPadding: '20px'
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          centerMode: true,
+          slidesToShow: 1,
+          arrows: false,
+          centerPadding: '0'
+        }
+      }
+   ]
+  });
+
+  ymaps.ready(init);                                          //подключение карт
+
+  var placemarks = [
+      {
+        latitude: 55.751812,
+        longitude: 37.599292,
+        hintContent: 'Цена: 126 млн. рублей'
+      }
+    ]
+
+  function init (ymaps) {
+      if ($('#map').get(0)) {
+        var myMap = new ymaps.Map("map", {
+              center: [55.751812,37.599292],
+              zoom: 15,
+              controls: ["zoomControl"],
+              behaviors: ["drag"]
+          });
+
+          var placemark = new ymaps.Placemark([55.751812,37.599292],{
+            hintContent: 'IDO'
+          },{
+            iconLayout: 'default#image'
+          });
+
+          myMap.geoObjects.add(placemark);
+      }
+    }
+
 });

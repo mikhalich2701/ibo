@@ -1,0 +1,63 @@
+/*========================= MAP ========================*/
+.map
+	position: relative
+	height: 470px
+	&__row
+		position: absolute
+		width: 360px
+		left: calc((100vw - 1170px) / 2)
+		top: 84px
+		z-index: 100
+		+r(1200)
+			left: calc((100vw - 992px) / 2)
+		+r(992)
+			width: 250px
+			left: calc((100vw - 768px) / 2)
+		+r(768)
+			width: 200px
+			left: calc((100vw - 576px) / 2)
+		+r(576)
+			left: calc((100vw - 480px) / 2)
+		+r(480)
+			display: none
+	&__block
+	&__info
+		padding-left: 60px
+		padding-top: 45px
+		padding-bottom: 10px		
+		background: #fff
+		font-size: 1.1rem
+		+r(992)
+			padding-left: 30px
+			&-title
+				font-size: 1.4rem
+		+r(768)
+			padding-left: 10px
+			font-size: 0.8rem
+			&-title
+				font-size: 1.2rem
+		&-title
+			margin-bottom: 35px
+			font-size: 1.7rem
+			color: #000
+			font-weight: bold
+		&-office
+			margin-bottom: 30px
+			font-weight: bold
+		&-adress
+			margin-bottom: 30px
+	&__link
+		display: block
+		margin-top: 30px
+		margin-left: 60px
+		color: $maintext
+		font-size: 1.1rem
+		+r(992)
+			margin-left: 30px
+		+r(768)
+			margin-left: 10px
+
+			
+			
+			
+

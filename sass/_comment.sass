@@ -1,0 +1,84 @@
+/*========================= COMMENT ========================*/
+.comment
+	padding-top: 65px
+	padding-bottom: 65px
+	background: url('../img/comment_bg.png') center center no-repeat
+	background-size: cover
+	&__title
+		margin-bottom: 70px
+	&__slider
+		.slick-track
+			margin: 70px 0
+		.slick-center
+			transform-origin: center center
+			transform: scale(1.4)
+			z-index: 100
+			+r(768)
+				transform: scale(1.1)
+		.slick-arrow
+			width: 17px
+			height: 31px
+			background: url('../img/arrow_sm.svg') center center no-repeat
+			background-size: cover
+			transition: opacity .3s
+			&:hover
+				opacity: 0.6
+		.slick-prev:before, .slick-next:before
+			content: ""
+		.slick-next
+			transform-origin: center center
+			transform: rotate(180deg) translateY(17px)
+	&__item
+		position: relative
+		+push-auto
+		margin-top: 53px
+		padding: 70px 18px 30px 18px
+		background: #FFFFFF
+		text-align: center
+		box-shadow: 0px 9px 30px rgba(0, 0, 0, 0.05)
+		transform-origin: center center
+		transform: scale(1) 
+		transition: transform .5s
+		&-img
+			position: absolute
+			width: 105px
+			height: 105px
+			left: 50%
+			top: -52px
+			border-radius: 50%
+			background: #D8D8D8
+			transform: translateX(-50%)
+			overflow: hidden
+		&-name
+			margin-bottom: 5px
+			font-size: 1.5rem
+			font-weight: bold
+		&-date
+			margin-bottom: 10px
+			font-size: 0.9rem
+			opacity: 0.6
+		&-text
+			color: #9B9B9B
+			font-size: 0.5rem
+			line-height: 0.7rem
+		&-link
+			display: inline-block
+			margin-bottom: 20px
+			color: $maintext
+			font-weight: bold
+			transition: opacity .3s
+			&:hover
+				color: $maintext
+				opacity: 0.7
+		&-social
+			display: flex
+			justify-content: center
+			align-items: center
+			&-icon
+				display: block
+				margin: 0 5px
+			&-count
+				margin: 0 5px
+				color: #D0D0D0
+			
+			
