@@ -99,6 +99,66 @@ $(document).ready(function (){
    ]
   });
 
+  $('.carddata__slider').each(function(i){
+    $(this).slick({             // настройка слайдера
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: false,
+        asNavFor: $(this).siblings()
+    });
+
+    $(this).siblings().slick({             
+        slidesToShow: 4,
+        centerMode: true,
+        centerPadding: '0px',
+        dots: false,
+        arrows: true,
+        asNavFor: this,
+        focusOnSelect: true,
+        responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        }
+     ]
+    });
+  });
+
+  $('.carditem__slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: false,
+    nextArrow: '.carditem__arrow-right',
+    prevArrow: '.carditem__arrow-left',
+    responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+     ]
+  });
+
   ymaps.ready(init);                                          //подключение карт
 
   var placemarks = [

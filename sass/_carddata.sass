@@ -1,2 +1,87 @@
 /*============================ CARDDATA ===========================*/
 .carddata
+	padding-top: 100px
+	padding-bottom: 45px
+	&__slider
+		margin-bottom: 20px
+	&__slider1
+		position: relative
+		margin-bottom: 30px
+		width: 80%
+		+push-auto
+		.slick-slide
+			opacity: 0.6
+			border: 2px solid transparent
+			transition: opacity .3s
+			&:hover
+				opacity: 1
+		.slick-center
+			border: 2px solid #000
+			opacity: 1
+		.slick-arrow
+			width: 10px
+			height: 19px
+			background: url('../img/arrow_sm.svg') center center no-repeat
+			background-size: cover
+			transition: opacity .3s
+			&:hover
+				opacity: 0.6
+		.slick-next
+			transform-origin: center center
+			transform: rotate(180deg) translateY(7px)
+		.slick-prev:before, .slick-next:before
+			content: ""
+		&-item
+			margin: 0 5px
+	&__info
+		+r(1200)
+			&-title
+				margin-bottom: 20px
+				font-size: 1.5rem
+			&-text
+				line-height: 20px
+		&-title
+			margin-bottom: 30px
+		&-text
+			line-height: 29px
+			font-size: 1rem
+			font-weight: bold
+			span
+				font-weight: 400
+	&__price		
+		display: flex
+		justify-content: space-between
+		margin-top: 30px
+		margin-bottom: 35px
+		+r(1200)
+			margin-top: 20px
+			margin-bottom: 10px
+		&-item
+			p
+				&:first-child
+					margin-bottom: 5px
+					color: $maintext
+					font-size: 0.8rem
+				&:nth-child(2)
+					color: $orange
+					opacity: 1
+					font-size: 2rem
+					font-weight: bold
+					text-shadow: 0px 0px 24px rgba(85, 85, 85, 0.24499)
+					span
+						font-size: 1rem
+	&__priceproject
+		color: #2A2A2A
+		font-size: 1.2rem
+		font-weight: bold
+		line-height: 1.7rem
+		+r(1200)
+			font-size: 1rem
+			line-height: 1.4rem
+	&__projectinfo
+		color: #2A2A2A
+		font-size: 0.8rem
+		line-height: 1rem
+		+r(1200)
+			font-size: 0.7rem
+			line-height: 1rem
