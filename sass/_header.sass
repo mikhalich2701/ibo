@@ -1,33 +1,36 @@
 /*============================ HEADER ===========================*/
 .header
-	padding-top: 70px 
+	padding-top: 80px 
 	background: #000
 	color: #fff
 	&__menu
 		display: flex
 		justify-content: space-between
 		align-items: center
-		margin-bottom: 20px
+		margin-bottom: 3px
 	&__logo
+		margin-top: -10px
 		&-text
-			margin-left: 6px
+			margin-left: 8px
 			margin-top: 4px
 			color: #ffffff;
-			font-size: 0.65rem
+			font-size: 0.5rem
 			font-weight: 700
-			letter-spacing: 1.9px
+			letter-spacing: 3.2px
 			text-transform: uppercase
 		&:hover &-text
 			color: #fff
 	&__nav
 		display: flex
 		align-items: center
+		margin-left: 60px
+		margin-top: 5px
 		&-burger
 			display: none
 		&-box
 			display: flex
 		&-item
-			margin: 0 30px
+			margin: 0 35px
 		+r(992)
 			&-item
 				margin: 0 5px
@@ -35,7 +38,7 @@
 			display: none
 		&-link
 			color: #fff
-			font-size: 1rem
+			font-size: 0.9rem
 			font-weight: 700
 			letter-spacing: 0.2px
 	.button
@@ -47,7 +50,7 @@
 		display: flex
 		position: absolute
 		left: 0
-		bottom: 100px
+		bottom: 110px
 		+r(992)
 			bottom: 50px
 	&__arrow
@@ -67,13 +70,13 @@
 			
 	&__row
 		position: relative
-		padding-bottom: 210px
+		padding-bottom: 198px
 		&-current
 			position: absolute
 			display: flex
 			align-items: flex-start
-			top: 320px
-			left: 375px
+			top: 300px
+			left: 355px
 			font-size: 1.2rem
 			+r(768)
 		    	top: 590px
@@ -82,7 +85,7 @@
 				font-size: 0.9rem
 				opacity: 0.6
 			img
-				margin: 0 10px
+				margin: 0 5px
 			&-number
 				margin-top: 5px
 	&__slide
@@ -102,24 +105,23 @@
 			+r(768)
 				margin-bottom: 40px
 		&-title
-			margin-bottom: 15px
+			margin-bottom: 10px
 		&-text
-			margin-bottom: 40px
-			font-size: 1.2rem
+			margin-bottom: 35px
+			font-size: 1rem
 			font-weight: 300
-			letter-spacing: 0.94px
+			letter-spacing: 1.5px
 			line-height: 1.4rem
-			letter-spacing: 0.94px
 			opacity: .6
 		&-detaile
 			display: flex
 			align-items: center
 			max-width: 150px
 			color: #fff
-			font-size: 1.1rem
+			font-size: 0.9rem
 			font-weight: 600
 			p
-				margin-right: 10px
+				margin-right: 20px
 			img
 				transition: transform .3s
 			&:hover
@@ -127,14 +129,14 @@
 			&:hover img 
 				transform: translateX(10px) 
 		.slick-dots 
-		    top: 330px
+		    top: 310px
 		    left: 0
 		    text-align: left
 		    +r(768)
 		    	top: 600px
 		    li
 		    	margin: 0 0
-		    	width: 90px
+		    	width: 85px
 		    	height: 2px
 		    	background: #fff
 		    	opacity: 0.25
