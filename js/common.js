@@ -159,54 +159,56 @@ $(document).ready(function (){
      ]
   });
 
-  $('a[href^="#"]').click(function () {                 //плавный скролл к метке
-        elementClick = $(this).attr("href");
-        destination = $(elementClick).offset().top;
-        $('html').animate( { scrollTop: destination }, 1100 );
-      return false;
-    });
+  $('.header__nav-link[href^="#"]').click(function () {                 //плавный скролл к метке
+      elementClick = $(this).attr("href");
+      destination = $(elementClick).offset().top;
+      $('html').animate( { scrollTop: destination }, 1100 );
+    return false;
+  });
 
   $('.header__nav-burger').click(function(){          //анимация выпадающего меню
-        $('.header__nav-box').slideToggle();
-    });
+      $('.header__nav-box').slideToggle();
+  });
 
-  $('.header__nav-link').click(function(){          
-        $('.header__nav-box').slideUp();
-    });
+  $('.header__nav-link').click(function(){  
+    if ($(window).width() < 768) {
+      $('.header__nav-box').slideUp();
+    }
+  });
 
   $(window).resize(function() {                         //появление пунктов навигации при увеличении экрана
-        if ($(window).width() > 768) {
-            $('.header__nav-box').removeAttr('style');
-        }
-    });
+    if ($(window).width() > 768) {
+      $('.header__nav-box').removeAttr('style');
+    }
+  });
 
   ymaps.ready(init);                                          //подключение карт
 
   var placemarks = [
-      {
-        latitude: 55.751812,
-        longitude: 37.599292,
-        hintContent: 'Цена: 126 млн. рублей'
-      }
-    ]
+    {
+      latitude: 55.751812,
+      longitude: 37.599292,
+      hintContent: 'Цена: 126 млн. рублей'
+    }
+  ]
 
   function init (ymaps) {
-      if ($('#map').get(0)) {
-        var myMap = new ymaps.Map("map", {
-              center: [55.751812,37.599292],
-              zoom: 15,
-              controls: ["zoomControl"],
-              behaviors: ["drag"]
-          });
+    if ($('#map').get(0)) {
+      var myMap = new ymaps.Map("map", {
+            center: [55.751812,37.599292],
+            zoom: 15,
+            controls: ["zoomControl"],
+            behaviors: ["drag"]
+        });
 
-          var placemark = new ymaps.Placemark([55.751812,37.599292],{
-            hintContent: 'IDO'
-          },{
-            iconLayout: 'default#image'
-          });
+        var placemark = new ymaps.Placemark([55.751812,37.599292],{
+          hintContent: 'IDO'
+        },{
+          iconLayout: 'default#image'
+        });
 
-          myMap.geoObjects.add(placemark);
-      }
+        myMap.geoObjects.add(placemark);
     }
+  }
 
 });
