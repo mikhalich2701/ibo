@@ -72,6 +72,7 @@
 			color: #565656
 		&-item
 			margin-bottom: 20px
+			padding: 0 20px
 			width: 100%
 			height: 45px
 			mix-blend-mode: normal
@@ -88,10 +89,13 @@
 			background: #F4F4F4 url('../img/user.svg') 24px 50% no-repeat
 		.phone
 			background: #F4F4F4 url('../img/phone.svg') 24px 50% no-repeat
-		.button
+		&-button
 			width: 100%
 			margin-top: 10px
 			margin-bottom: 20px
+			transition: background .3s
+			&:hover
+				background: $orange
 		&-check
 			font-size: 0.8rem
 			letter-spacing: 0.2px

@@ -71,13 +71,23 @@
 		&-social
 			display: flex
 			justify-content: center
-			align-items: center
+			align-items: center			
 			&-icon
-				display: block
+				display: flex
+				justify-content: center
+				align-items: center	
 				margin: 0 5px
-			&-count
-				margin: 0 5px
-				color: #D0D0D0
+				width: 30px
+				height: 30px
+				border-radius: 50%
+				opacity: 0.5
+				transition: opacity .3s
+				&:hover
+					opacity: 1
+			&-facebook
+				background: rgba(14, 74, 118, 0.2)
+			&-instagram
+				background: rgba(122, 20, 44, 0.2)
 .index
 	background: url('../img/comment_bg.png') center center no-repeat
 	background-size: cover

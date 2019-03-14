@@ -159,6 +159,27 @@ $(document).ready(function (){
      ]
   });
 
+  $('a[href^="#"]').click(function () {                 //плавный скролл к метке
+        elementClick = $(this).attr("href");
+        destination = $(elementClick).offset().top;
+        $('html').animate( { scrollTop: destination }, 1100 );
+      return false;
+    });
+
+  $('.header__nav-burger').click(function(){          //анимация выпадающего меню
+        $('.header__nav-box').slideToggle();
+    });
+
+  $('.header__nav-link').click(function(){          
+        $('.header__nav-box').slideUp();
+    });
+
+  $(window).resize(function() {                         //появление пунктов навигации при увеличении экрана
+        if ($(window).width() > 768) {
+            $('.header__nav-box').removeAttr('style');
+        }
+    });
+
   ymaps.ready(init);                                          //подключение карт
 
   var placemarks = [

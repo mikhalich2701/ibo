@@ -4,19 +4,33 @@
 	background: #000
 	color: #fff
 	&__menu
+		position: relative
 		display: flex
 		justify-content: space-between
 		align-items: center
 		margin-bottom: 3px
 	&__logo
-		margin-top: -10px
-		&-text
-			margin-left: 8px
+		margin-top: -5px
+		+r(480)
+			margin-top: -8px
+			img
+				width: 100px
+				height: 44px
+			&-text
+				margin-left: 2px
+				margin-top: 2px
+				color: #ffffff
+				font-size: 0.4rem
+		img
+			width: 121px
+			height: 50px
+		&-text			
+			margin-left: 2px
 			margin-top: 4px
-			color: #ffffff;
-			font-size: 0.5rem
+			color: #ffffff
+			font-size: 0.55rem
 			font-weight: 700
-			letter-spacing: 3.2px
+			letter-spacing: 2.5px
 			text-transform: uppercase
 		&:hover &-text
 			color: #fff
@@ -27,25 +41,96 @@
 		margin-top: 5px
 		&-burger
 			display: none
+			position: relative
+			margin-right: 10px
+			width: 30px
+			height: 20px
+			cursor: pointer
+			transition: transform .3s
+			z-index: 300
+			span
+				display: inline-block
+				position: absolute
+				width: 30px
+				height: 2px
+				left: 0
+				background: #fff
+				border-radius: 1px
+				transition: transform .3s linear
+				&:nth-child(2)
+					top: 8px
+				&:last-child
+					bottom: 1px
+			+r(768)
+				display: block
 		&-box
 			display: flex
+			+r(768)
+				display: none
+				position: absolute
+				padding-top: 10px
+				width: 100%
+				left: 0
+				top: 100%
+				text-align: center
+												
 		&-item
 			margin: 0 35px
+		+r(1200)
+			margin-left: 0
 		+r(992)
 			&-item
 				margin: 0 5px
 		+r(768)
-			display: none
+			&-item
+				position: relative
+				padding: 10px 0	
+				z-index: 100	
 		&-link
+			position: relative
 			color: #fff
 			font-size: 0.9rem
 			font-weight: 700
 			letter-spacing: 0.2px
-	.button
+			transition: color .3s
+			&:after
+				+pseudo
+				width: 0
+				height: 1px
+				bottom: -4px
+				left: 50%
+				background: $orange
+				border-radius: 2px
+				transform: translateX(-50%) 
+				transition: width .3s			
+			&:hover
+				color: $orange
+			&:hover::after
+				width: 100%
+		&-row
+			display: flex
+			align-items: center
+	&__button
+		position: relative
 		width: 195px
-		background: linear-gradient(100deg, rgba(252, 155, 52, 1) 0%, rgba(236, 134, 26, 1) 100%)
+		background: linear-gradient(100deg, rgb(252, 155, 52) 0%, rgb(236, 134, 26) 100%)
+		z-index: 1
 		p
 			margin-left: 5px
+		&:before
+			+pseudo
+			width: 195px
+			height: 100%
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)
+			border-radius: 22px
+			background: linear-gradient(100deg, rgb(252, 155, 52) 0%, rgb(236, 134, 26) 100%)
+			z-index: -1
+			animation: pulse 1s ease-in-out infinite
+		+r(480)
+			width: 130px
+			font-size: 0.6rem
 	&__slidecontrol
 		display: flex
 		position: absolute
@@ -53,6 +138,8 @@
 		bottom: 110px
 		+r(992)
 			bottom: 50px
+		+r(480)
+			bottom: 25px
 	&__arrow
 		margin: 0 10px
 		display: flex

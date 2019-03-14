@@ -7,22 +7,23 @@ header.header
 						img(src="img/Logo.svg", alt="Логотип")
 						p.header__logo-text Делаем как надо.
 					nav.header__nav
-						.header__nav-burger
-							span
-							span
-							span
 						ul.header__nav-box
 							li.header__nav-item
-								a.header__nav-link(href="#") Главная
+								a.header__nav-link(href="index.html") Главная
 							li.header__nav-item
-								a.header__nav-link(href="#") Наш Instagram
+								a.header__nav-link(href="#instagram") Наш Instagram
 							li.header__nav-item
-								a.header__nav-link(href="#") Проекты
+								a.header__nav-link(href="projectbox.html") Проекты
 							li.header__nav-item
-								a.header__nav-link(href="#") Отзывы
-					button.button
-						img(src="img/icon-phone.svg", alt="Трубка")
-						p ОБРАТНЫЙ ЗВОНОК
+								a.header__nav-link(href="#comment") Отзывы
+					.header__nav-row
+						.header__nav-burger
+								span
+								span
+								span
+						a.button.header__button(href="#application")
+							img(src="img/icon-phone.svg", alt="Трубка")
+							p ОБРАТНЫЙ ЗВОНОК
 	.container
 		.row
 			.col

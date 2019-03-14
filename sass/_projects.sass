@@ -36,10 +36,10 @@
 			opacity: 0.3
 			border-radius: 0
 			transition: opacity .3s
+			border: none
 			border-bottom: 1px solid $maintext
 			&:hover
 				opacity: 1
-				border: none
 				border-bottom: 1px solid $maintext
 			+r(992)
 				font-size: 0.6rem
@@ -82,6 +82,8 @@
 			transition: opacity .3s
 			&:hover
 				opacity: 0.6
+		.slick-prev:before, .slick-next:before
+			content: ""
 		.slick-next
 			transform-origin: center center
 			transform: rotate(180deg) translateY(7px)
@@ -127,4 +129,7 @@
 		box-shadow: 0px 0px 24px rgba(85, 85, 85, 0.24499)
 		width: 185px
 		+push-auto
+		transition: background .3s
+		&:hover
+			background: $orange
 
