@@ -251,18 +251,29 @@
     <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="footer__text">
-            <p>Copyright © 2019 «iDo group».</p>
-            <p>Все права защищены и охраняются законом.</p>
+          <div class="col">
+            <div class="footer__text">
+              <p>Copyright © 2019 «iDo group».</p>
+              <p>Все права защищены и охраняются законом.</p>
+            </div>
           </div>
         </div>
-        <div class="row"><a class="footer__link" href="#">Политика конфедициальности </a></div>
+        <div class="row">
+          <div class="col"><a class="footer__link" href="#">Политика конфедициальности </a></div>
+        </div>
       </div>
     </footer>
     <!--SCRIPT-->
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/common.js"></script>
-    <script>new WOW().init();</script>
+    <script>
+      var wow = new WOW(
+      	{
+      		mobile: false
+      	}
+      );
+      wow.init();
+    </script>
   </body>
 </html>

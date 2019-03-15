@@ -2210,6 +2210,10 @@ a:focus {
     z-index: 100;
   }
 
+  .header__row {
+    min-height: 767px;
+  }
+
   .header__row-current {
     top: 590px;
     left: 300px;
@@ -2328,7 +2332,10 @@ a:focus {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding-left: 15px;
+    font-size: 0.8rem;
+  }
+
+  .footer__link {
     font-size: 0.8rem;
   }
 }
@@ -2357,6 +2364,22 @@ a:focus {
 
   .header__slidecontrol {
     bottom: 25px;
+  }
+
+  .header__row-current {
+    left: 180px;
+  }
+
+  .header__slide .slick-dots li {
+    width: 40px;
+  }
+
+  .project {
+    margin-bottom: 80px;
+  }
+
+  .project__button {
+    margin-top: 40px;
   }
 
   .map__row {

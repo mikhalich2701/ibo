@@ -159,6 +159,8 @@
 		position: relative
 		padding-bottom: 198px
 		min-height: 557px
+		+r(768)
+			min-height: 767px
 		&-current
 			position: absolute
 			display: flex
@@ -167,8 +169,10 @@
 			left: 355px
 			font-size: 1.2rem
 			+r(768)
-		    	top: 590px
-		    	left: 300px
+				top: 590px
+				left: 300px
+			+r(480)
+				left: 180px
 			&-slidenumber
 				font-size: 0.9rem
 				opacity: 0.6
@@ -234,5 +238,7 @@
 		    	opacity: 0.25
 		    	+r(768)
 		    		width: 70px
+		    	+r(480)
+		    		width: 40px
 		    .slick-active
 		    	opacity: 0.99
