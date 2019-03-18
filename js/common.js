@@ -162,10 +162,10 @@ $(document).ready(function (){
   var windowHeight = $(window).height();
 
   $(window).scroll(function(){
-    if ($(document).scrollTop() >= 120) {                             // MENU FIXED
-      $('.header__fixed').css('position', 'fixed').css('padding', '20px 0').css('background', 'rgba(0, 0, 0, 0.7');
-    } else {
-      $('.header__fixed').removeAttr('style');
+    if ($(document).scrollTop() > 0 ) {                             // MENU FIXED
+      $('.header__fixed').css('background', 'rgba(0, 0, 0, 0.7)').css('padding', '20px 0');
+    } else{
+      $('.header__fixed').css('background', 'rgba(0, 0, 0, 1)').css('padding', '30px 0');
     }
   });
 
