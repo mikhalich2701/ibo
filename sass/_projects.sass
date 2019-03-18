@@ -60,6 +60,10 @@
 			position: relative
 	&__slider
 		margin-bottom: 20px
+		&-item
+			display: none
+			&:first-child
+				display: block
 	&__slider1
 		position: relative
 		margin-bottom: 30px
@@ -89,6 +93,9 @@
 			transform: rotate(180deg) translateY(7px)
 		&-item
 			margin: 0 5px
+			display: none
+			&:first-child
+				display: block
 	&__info
 		width: 80%
 		+push-auto

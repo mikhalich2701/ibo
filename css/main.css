@@ -229,9 +229,16 @@ a:focus {
 /*============================ HEADER ===========================*/
 
 .header {
-  padding-top: 80px;
+  position: relative;
   background: #000;
   color: #fff;
+}
+
+.header__fixed {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100%;
+  z-index: 300;
 }
 
 .header__menu {
@@ -1051,6 +1058,14 @@ a:focus {
   margin-bottom: 20px;
 }
 
+.projects__slider-item {
+  display: none;
+}
+
+.projects__slider-item:first-child {
+  display: block;
+}
+
 .projects__slider1 {
   position: relative;
   margin-bottom: 30px;
@@ -1107,6 +1122,11 @@ a:focus {
 
 .projects__slider1-item {
   margin: 0 5px;
+  display: none;
+}
+
+.projects__slider1-item:first-child {
+  display: block;
 }
 
 .projects__info {

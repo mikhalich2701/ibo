@@ -1,29 +1,30 @@
 header.header
-	.container
-		.row
-			.col
-				.header__menu
-					a.header__logo(href="index.html")
-						img(src="img/Logo.svg", alt="Логотип")
-						p.header__logo-text Делаем как надо.
-					nav.header__nav
-						ul.header__nav-box
-							li.header__nav-item
-								a.header__nav-link(href="index.html") Главная
-							li.header__nav-item
-								a.header__nav-link(href="#instagram") Наш Instagram
-							li.header__nav-item
-								a.header__nav-link(href="projectbox.html") Проекты
-							li.header__nav-item
-								a.header__nav-link(href="#comment") Отзывы
-					.header__nav-row
-						.header__nav-burger
-								span
-								span
-								span
-						a.button.header__button(href="#application")
-							img(src="img/icon-phone.svg", alt="Трубка")
-							p ОБРАТНЫЙ ЗВОНОК
+	.header__fixed
+		.container
+			.row
+				.col
+					.header__menu
+						a.header__logo(href="index.html")
+							img(src="img/Logo.svg", alt="Логотип")
+							p.header__logo-text Делаем как надо.
+						nav.header__nav
+							ul.header__nav-box
+								li.header__nav-item
+									a.header__nav-link.header__search(href="index.html") Главная
+								li.header__nav-item
+									a.header__nav-link.header__search(href="#instagram") Наш Instagram
+								li.header__nav-item
+									a.header__nav-link.header__search(href="projectbox.html") Проекты
+								li.header__nav-item
+									a.header__nav-link.header__search(href="#comment") Отзывы
+						.header__nav-row
+							.header__nav-burger
+									span
+									span
+									span
+							a.button.header__button.header__search(href="#application")
+								img(src="img/icon-phone.svg", alt="Трубка")
+								p ОБРАТНЫЙ ЗВОНОК
 	.container
 		.row
 			.col

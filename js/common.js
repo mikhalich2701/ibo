@@ -159,7 +159,17 @@ $(document).ready(function (){
      ]
   });
 
-  $('.header__nav-link[href^="#"]').click(function () {                 //плавный скролл к метке
+  var windowHeight = $(window).height();
+
+  $(window).scroll(function(){
+    if ($(document).scrollTop() >= 120) {                             // MENU FIXED
+      $('.header__fixed').css('position', 'fixed').css('padding', '20px 0').css('background', 'rgba(0, 0, 0, 0.7');
+    } else {
+      $('.header__fixed').removeAttr('style');
+    }
+  });
+
+  $('.header__search[href^="#"]').click(function () {                 //плавный скролл к метке
       elementClick = $(this).attr("href");
       destination = $(elementClick).offset().top;
       $('html').animate( { scrollTop: destination }, 1100 );
